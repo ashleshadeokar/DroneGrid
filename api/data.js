@@ -43,6 +43,9 @@ app.get('/api/data', (req, res) => {
 
 // Vercel expects module.exports to be a function handling (req, res)
 module.exports = (req, res) => {
-    app(req, res);
+    const { createServer } = require('http');
+    const server = createServer(app);
+    server.listen(() => {
+        server.emit('request', req, res);
+    });
 };
-
