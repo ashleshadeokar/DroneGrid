@@ -167,7 +167,7 @@
                             });
                     
                             // Fetch the data from the backend
-                            fetch('/api/data')
+                            fetch('https://dronebackend.vercel.app/api/data')
                                 .then(response => response.json())
                                 .then(data => {
                                 console.log(data);
