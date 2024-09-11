@@ -296,7 +296,7 @@
     --gutter         : 2.2rem;
 }
 .column.lg-6.stack-on-1100.section-header__primary p {
-    color: white; /* Sets the text color to white */
+    color: black; /* Sets the text color to white */
 }
 /* on medium screen devices
  */
@@ -3453,7 +3453,7 @@ img.u-pull-left {
     position                 : relative;
 }
 .s-intro__content {
-    font-size: 40px; /* Adjust this value to decrease or increase the font size as needed */
+    font-size: 30px; /* Adjust this value to decrease or increase the font size as needed */
 }
 /* --------------------------------------------------------------------
  * ## intro background
@@ -3940,6 +3940,10 @@ img.u-pull-left {
     object-fit: cover; /* This ensures the image covers the set area without distorting its aspect ratio */
     border-radius: 50%;  /* Optional: if you want round images */
 }
+.team-list__role {
+    margin: 0; /* Removes vertical spacing between credentials */
+    padding: 0; /* Optional: Removes any padding inside each paragraph */
+}
 
 @media (max-width: 600px) {
     .team-list__photo img {
@@ -3947,6 +3951,12 @@ img.u-pull-left {
         height: 150px;
     }
 }
+.underline {
+    height: 2px; /* Thickness of the line */
+    background-color: black; /* Color of the line set explicitly to black */
+    margin: 8px 0; /* Vertical spacing above and below the line */
+}
+
 /* ===================================================================
  * # ABOUT
  *
