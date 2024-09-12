@@ -3455,6 +3455,13 @@ img.u-pull-left {
 .s-intro__content {
     font-size: 30px; /* Adjust this value to decrease or increase the font size as needed */
 }
+.click-instruction {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Sets the font color to white */
+    font-size: 16px; /* Adjusts the font size, change this value as needed */
+}
+
 /* --------------------------------------------------------------------
  * ## intro background
  * -------------------------------------------------------------------- */

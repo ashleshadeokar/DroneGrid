@@ -180,26 +180,28 @@
                     <h3 class="column lg-12 section-header__pretitle pretitle text-pretitle">About Us</h3>
                     <div class="column lg-6 stack-on-1100 section-header__primary">
                         <h2 class="title text-display-1">
-                        Target Laser Designation (TLD) Systems - Advanced Drone Technology for Precise Data Collection
+                            Adaptable Multispectral UAS with Laser Target Designation
                         </h2>
                     </div>
                     <div class="column lg-6 stack-on-1100 section-header__secondary">
                         <p class="desc">
-                        Utilizing cutting-edge drones equipped with GPS, RGB Cameras, and Lightware Lidar, we capture high-quality geospatial and visual data across diverse environments. 
-                        </p>
-                    </div>
+                        Despite almost all U.S. Military air- and ground-based Intelligence, Surveillance, and Reconnaissance (ISR) systems having multiple sensors onboard, operators can currently only access one sensor at a time. Sensor selection is manually determined based on illumination and visibility conditions. However, there are transitional illumination periods, such as the Beginning Morning Nautical Twilight (BMNT) and the End Evening Nautical Twilight (EENT) periods. During these periods, sensors such as Red-Green-Blue (RGB) and thermal Long-Wave Infrared (LWIR) are both at degraded capacity. Seasonal and geographic variables both determine the optimal sensor fusion. Target type (object class) also plays a role in sensor fusion. Given the challenges of transitional illumination periods, it can be difficult for both imagery analysts and object detection models to effectively identify targets during these periods. Additionally, switching between RGB and infrared sensors on ISR systems is determined by operator discretion and lacks a scientific approach to maximizing detection performance.</p>
+                        </div>
                 </div> <!-- end section-header -->
 
                 <div class="row process-list list-block show-ctr block-lg-one-half block-tab-whole">
                        <!-- Final Product Plan
                         =============================================== -->
                         <div class="row research-item" id="final-product">
-                            <div class="column lg-12">
-                                <h3>Adaptable Multispectral UAS with Laser Target Designation</h3>
-                                <p>Our research combines a 3D printed UAV with an electric/solar hybrid system for prolonged endurance, equipped with a multispectral sensor array for comprehensive environmental data capture and target designation.</p>
-                            </div>
+                            <!-- <div class="column lg-12">
+                                <h3>Adaptable Multispectral UAS with Laser Target Designation</h3><br>
+                                <p>Despite almost all U.S. Military air- and ground-based Intelligence, Surveillance, and Reconnaissance (ISR) systems having multiple sensors onboard, operators can currently only access one sensor at a time. Sensor selection is manually determined based on illumination and visibility conditions. However, there are transitional illumination periods, such as the Beginning Morning Nautical Twilight (BMNT) and the End Evening Nautical Twilight (EENT) periods. During these periods, sensors such as Red-Green-Blue (RGB) and thermal Long-Wave Infrared (LWIR) are both at degraded capacity. Seasonal and geographic variables both determine the optimal sensor fusion. Target type (object class) also plays a role in sensor fusion. Given the challenges of transitional illumination periods, it can be difficult for both imagery analysts and object detection models to effectively identify targets during these periods. Additionally, switching between RGB and infrared sensors on ISR systems is determined by operator discretion and lacks a scientific approach to maximizing detection performance.</p>
+                            </div> -->
                             <div class="column lg-12">
                                 <img src="images/final.png" alt="Final Product Image" style="width: 100%; max-width: 1360px; height: auto;">
+                            </div>
+                            <div class="column lg-12"><br>
+                                <p>The focus of our research is developing Adaptive Multispectral Image Fusion methods that optimize object detection during all hours of the day. By fusing RGB and LWIR sensors, combined with a modified YOLOv5 model, our models will have better detection at higher confidence levels. Furthermore, The fusion level will be automatically adjusted based on illumination and ground temperatures from the edge device’s attached photosensor and thermometer. The codebase will be adaptable to any dual-sensor ISR system, for greater interoperability between low-cost dual-sensor UAS and loitering munitions. Finally, this research develops a low-cost and open-source laser-target designator that estimates geolocation data from object classes detected by an optimized multispectral YOLO model.</p>
                             </div>
                             <!-- <div class="column lg-12">
                                 <h4>Grant-Cost</h4>
@@ -348,7 +350,7 @@
     <div class="row research-item flex-row-reverse">
         <div class="column lg-6">
             <h3>YOLO Adaptation Based on Optimal Fusion</h3>
-            <p>Design custom YOLO models that are optimized for the most effective sensor fusion.</p>
+            <p>Designing custom YOLO models that are optimized for the most effective sensor fusion.</p>
         </div>
         <div class="column lg-6">
             <img src="images/yolo.png" alt="YOLO Adaptation Image">
@@ -358,8 +360,8 @@
     <!-- Create Large Multispectral Synthetic Dataset -->
     <div class="row research-item">
         <div class="column lg-6">
-            <h3>Creatind Large Multispectral Synthetic Dataset</h3>
-            <p>Generate multispectral datasets with a variety of military-specific object classes using transfer learning, LLMs, and auto-segmentation techniques to minimize manual labor.</p>
+            <h3>Creating Large Multispectral Synthetic Dataset</h3>
+            <p>Generating multispectral datasets with a variety of military-specific object classes using transfer learning, LLMs, and auto-segmentation techniques to minimize manual labor.</p>
         </div>
         <div class="column lg-6">
             <img src="images/multi.jpg" alt="Multispectral Dataset Image">
@@ -390,18 +392,24 @@
                         <h3 class="column lg-12 section-header__pretitle text-pretitle">Applications</h3>
                         <div class="column lg-6 stack-on-1100 section-header__primary">
                             <h2 class="title text-display-1">
-                                Here’s a showcase of our cutting-edge drone technology in action across various sectors.
+                                Our UAS technology delivers adaptive multispectral solutions for defense, agriculture, and infrastructure.
                             </h2>
                         </div>
                         <div class="column lg-6 stack-on-1100 section-header__secondary">
                             <p class="desc">
-                            Our research illustrate how advanced drone systems enhance data collection and analysis for applications in urban planning, environmental monitoring, and disaster response.
-                            </p>
+                                Our UAS technology, combined with our adaptive multispectral object detection method, is able to provide a myriad of real-world solutions across several domains, including defense, agriculture, infrastructure, and many more.                             </p>
                         </div>
                     </div> <!-- end section-header -->
                     <!-- <div class="button-container">
                         <a href="visualization.html" class="btn">Data Visualization</a>
                     </div> -->
+                    <div class="row">
+                        <div class="column lg-12">
+                            <p class="click-instruction" style="text-align: center; margin-bottom: 20px;">
+                                Click on the images to know more!
+                            </p>
+                        </div>
+                    </div>
                     <div id="bricks" class="row bricks">
                         <div class="column lg-12 masonry">
                             <div class="bricks-wrapper">
@@ -580,7 +588,7 @@
             <div class="team-list__photo">
                 <img src="images/jana.png" alt="Team Member">
             </div>
-            <h3 class="team-list__name">Dr Jana Kasaka</h3>
+            <h3 class="team-list__name">Dr Jana Košecká</h3>
             <p class="team-list__role">Professor, Associate Chair</p>
             <p class="team-list__role"> PhD, Computer Science</p>
             <p class="team-list__role">MS, Electrical Engineering and Computer Science</p>
@@ -591,8 +599,8 @@
                 <img src="images/jim.png" alt="Team Member">
             </div>
             <h3 class="team-list__name">James Gallagher</h3>
-            <p class="team-list__role">PHD Student</p>
-            <p class="team-list__role">U.S. Army Intelligence Officer</p>
+            <p class="team-list__role">PhD, Geograpy and <br>GeoScience Dept</p>
+            <!-- <p class="team-list__role">U.S. Army Intelligence Officer</p> -->
         </div> <!-- end team-list__item -->
 
         <div class="column team-list__item">
@@ -630,7 +638,7 @@
                 <div class="contact-block">
                     <h6>Where To Find Us</h6>
                     <p>
-                    Geography Information Sciences<br>
+                    Geoinformation Sciences<br>
                     4400 University Drive<br>
                     Fairfax, Virginia <br>
                     22030 US
