@@ -3453,7 +3453,7 @@ img.u-pull-left {
     position                 : relative;
 }
 .s-intro__content {
-    font-size: 30px; /* Adjust this value to decrease or increase the font size as needed */
+    font-size: 20px; /* Adjust this value to decrease or increase the font size as needed */
 }
 .click-instruction {
     text-align: center;
@@ -3580,6 +3580,7 @@ img.u-pull-left {
     position       : relative;
 }
 
+
 .s-intro__content-bg {
     display             : block;
     background-image    : url(../images/drone.png);
@@ -3613,7 +3614,8 @@ img.u-pull-left {
     --text-title-size : 8.8rem;
     --text-multiplier : 1;
     font-weight       : 600;
-    font-size         : calc(var(--text-title-size) * var(--text-multiplier));
+    /* font-size         : calc(var(--text-title-size) * var(--text-multiplier)); */
+    font-size         : 50px;
     line-height       : 1.227;
     color             : white;
     padding-top       : var(--vspace-0_75);
