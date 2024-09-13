@@ -3532,12 +3532,62 @@ img.u-pull-left {
     height: auto;
 }
 
+.research-item:nth-of-type(2) .column.lg-6 {
+    display: flex; /* Activate flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.research-item:nth-of-type(2) .column.lg-6 img {
+    padding: 15px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover fit to avoid stretching, might crop */
+}
+/* Target the parent container of the image specifically */
+.research-item:nth-of-type(3) .column.lg-6 {
+    display: flex; /* Activate flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.research-item:nth-of-type(3) .column.lg-6 img {
+    width: 400px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover fit to avoid stretching, might crop */
+}
+
 .research-item:nth-of-type(3) img {
     width: 400px; /* Example width */
-    height: 400px; /* Example height */
     object-fit: cover; /* Ensures the image covers the area, could crop as needed */
 }
 
+.research-item:nth-of-type(4) .column.lg-6 {
+    display: flex; /* Activate flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.research-item:nth-of-type(4) .column.lg-6 img {
+    padding: 15px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover fit to avoid stretching, might crop */
+}
+
+.research-item:nth-of-type(5) .column.lg-6 {
+    display: flex; /* Activate flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.research-item:nth-of-type(5) .column.lg-6 img {
+    padding: 15px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover fit to avoid stretching, might crop */
+}
 @media (max-width: 768px) {
     .research-item,
     .research-item.flex-row-reverse {
