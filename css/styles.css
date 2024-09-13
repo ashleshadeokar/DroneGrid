@@ -611,7 +611,7 @@ textarea {
  */
 .row {
     width     : 92%;
-    max-width : var(--width-grid-max);
+    /* max-width : var(--width-grid-max); */
     margin    : 0 auto;
     display   : flex;
     flex-flow : row wrap;
@@ -3946,40 +3946,38 @@ img.u-pull-left {
         display : none;
     }
 }
+/* Container holding all team members */
+.row.team-list {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures no wrapping occurs */
+    justify-content: space-around; /* Adjust this to 'space-around' or 'flex-start' as needed */
+    overflow-x: auto; /* Maintains horizontal scrolling if needed */
+}
+
+/* Individual team member items */
+.column.team-list__item {
+    flex: 0 0 18%; /* Reduce the basis from 20% if necessary */
+    display: inline-block; /* Keep as inline-block if using flex on parent */
+    text-align: center; /* Centers the content */
+    padding: 10px 5px; /* Reduce horizontal padding if it's too spaced out */
+    margin: 0px; /* Remove any default margins */
+}
 
 .team-list__photo img {
-    width: 120px;  /* Reduced width */
-    height: 120px; /* Reduced height to maintain aspect ratio */
-    object-fit: cover;
-    border-radius: 50%;
+    width: 120px; /* Control the size of the image */
+    height: 120px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 50%; /* Circular images */
 }
 
-.team-list__name, .team-list__role {
-    font-size: 0.8em; /* Reduced font size */
-    margin: 5px 0; /* Reduced spacing between text lines */
+.team-list__name {
+    font-size: 1em; /* Adjust font size as necessary */
+    margin: 0px 0; /* Tighten spacing between text lines */
 }
 
-/* Adjusting the container of each team member */
-.team-list__item {
-    flex: 0 0 20%; /* Each item will take 20% of the flex container width */
-    display: inline-block; /* Aligns items in a row */
-    text-align: center; /* Centers the content */
-    padding: 10px; /* Optional padding for spacing */
-    margin: 0px;
-}
 .team-list__role {
-    font-size: 0.8em; /* Reduced font size */
-    margin: 0; /* No space between role entries */
-    padding: 0; /* No internal padding */
-}
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start; /* Aligns items to the start of the flex line */
-}
-
-.content-section, .image-section {
-    flex: 1 1 50%; /* Each section takes up half of the container */
+    font-size: 0.75em; /* Adjust font size as necessary */
+    margin: 0px 0; /* Tighten spacing between text lines */
 }
 
 /* Ensure responsiveness */
