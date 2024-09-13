@@ -3947,6 +3947,7 @@ img.u-pull-left {
         display : none;
     }
 }
+
 .team-list__photo img {
     width: 120px;  /* Reduced width */
     height: 120px; /* Reduced height to maintain aspect ratio */
@@ -3966,6 +3967,11 @@ img.u-pull-left {
     text-align: center; /* Centers the content */
     padding: 10px; /* Optional padding for spacing */
     margin: 0px;
+}
+.team-list__role {
+    font-size: 0.8em; /* Reduced font size */
+    margin: 0; /* No space between role entries */
+    padding: 0; /* No internal padding */
 }
 
 @media (max-width: 600px) {
