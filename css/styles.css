@@ -785,6 +785,11 @@ textarea {
     width : 100%;
 }
 
+#myImage {
+    width: 2000px !important;
+    height: auto !important;
+}
+
 .block-lg-one-eight>.column {
     flex  : none;
     width : 12.5%;
@@ -3548,8 +3553,8 @@ img.u-pull-left {
 }
 
 #final-product img {
-    width: 80% !important;
-    max-width: 800px !important;
+    width: 90% !important;
+    max-width: 1000px !important;
     height: auto !important;
 }
 
@@ -3942,16 +3947,25 @@ img.u-pull-left {
         display : none;
     }
 }
-
 .team-list__photo img {
-    width: 200px;  /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
-    object-fit: cover; /* This ensures the image covers the set area without distorting its aspect ratio */
-    border-radius: 50%;  /* Optional: if you want round images */
+    width: 120px;  /* Reduced width */
+    height: 120px; /* Reduced height to maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 50%;
 }
-.team-list__role {
-    margin: 0; /* Removes vertical spacing between credentials */
-    padding: 0; /* Optional: Removes any padding inside each paragraph */
+
+.team-list__name, .team-list__role {
+    font-size: 0.8em; /* Reduced font size */
+    margin: 5px 0; /* Reduced spacing between text lines */
+}
+
+/* Adjusting the container of each team member */
+.team-list__item {
+    flex: 0 0 20%; /* Each item will take 20% of the flex container width */
+    display: inline-block; /* Aligns items in a row */
+    text-align: center; /* Centers the content */
+    padding: 10px; /* Optional padding for spacing */
+    margin: 0px;
 }
 
 @media (max-width: 600px) {
